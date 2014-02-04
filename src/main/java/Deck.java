@@ -1,5 +1,5 @@
 import java.util.LinkedList;
-import java.util.List;
+
 
 public class Deck {
     LinkedList<Card> cards;
@@ -12,7 +12,16 @@ public class Deck {
     public void shuffleDeck(){
 
     }
-    public Card GetCard(){
+    public Card getTopCard(){
         return cards.peek();
+    }
+
+    public static Deck getTestDeck(){
+        Deck result = new Deck();
+
+        for(int i = 0;i<30;i++){
+            result.cards.add(new SimpleCreature());
+        }
+        return result;
     }
 }

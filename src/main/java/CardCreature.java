@@ -1,25 +1,15 @@
-public class FieldCreature {
+public abstract class CardCreature extends Card{
     private int health;
     private int attack;
     private int turn;
-    private int baseHealth;
-    private int baseAttack;
-    private int baseTurn;
-    private CardEffect effect;
     private String name;
 
-    public FieldCreature(int baseHealth, int baseAttack, int baseTurn, CardEffect effect,String name) {
-        this.baseHealth = baseHealth;
-        this.baseAttack = baseAttack;
-        this.baseTurn = baseTurn;
-        this.effect = effect;
+    public CardCreature(int manaCost,int baseHealth, int baseAttack, int baseTurn, CardEffect effect,String name) {
+        super(manaCost,effect);
         this.name = name;
         this.turn = baseTurn;
         this.health= baseHealth;
         this.attack = baseAttack;
-    }
-    public FieldCreature() {
-        this(1,1,1,null,"Бесполезный бес");
     }
 
     public int getHealth() {
@@ -36,5 +26,21 @@ public class FieldCreature {
 
     public void setAttack(int attack) {
         this.attack = attack;
+    }
+
+    public int getTurn() {
+        return turn;
+    }
+
+    public void setTurn(int turn) {
+        this.turn = turn;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

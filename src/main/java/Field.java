@@ -14,6 +14,9 @@ public class Field {
     public FieldCreature getHex(int rowNum,int columnNum) {
         return battleField[rowNum][columnNum];
     }
+    public void setHex(FieldCreature fc,int row,int column) {
+        battleField[row][column]= fc;
+    }
 
     private FieldCreature[][] createBF(int rowNum, int columnNum) {
         FieldCreature result[][] = new FieldCreature[rowNum][];
