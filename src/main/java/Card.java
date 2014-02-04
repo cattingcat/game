@@ -1,11 +1,11 @@
-/**
- * Created by gbuh on 02.02.14.
- */
+
 public abstract class Card {
     private int manaCost;
+    private CardEffect effect;
 
-    protected Card(int manaCost) {
+    protected Card(int manaCost,CardEffect effect) {
         this.manaCost = manaCost;
+        this.effect = effect;
     }
 
     public int getManaCost() {

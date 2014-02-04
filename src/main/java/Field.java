@@ -4,6 +4,7 @@ import java.util.List;
 public class Field {
     FieldCreature[][] battleField;
     int rowNum, columnNum;
+
     public Field(int rowNum,int columnNum){
         battleField = createBF(rowNum,columnNum);
         this.rowNum = rowNum;
@@ -25,7 +26,8 @@ public class Field {
     private FieldCreature[] createEmptyRow(int columnNum) {
         FieldCreature[] resultRow = new FieldCreature[columnNum];
         for(int i = 0;i<columnNum;i++){
-            resultRow[i] = new FieldCreature();
+
+            resultRow[i] = null;
         }
         return resultRow;
     }
