@@ -1,3 +1,7 @@
+package model.cards_creature;
+
+import model.cards_templates.Effect;
+
 public class FieldCreature {
     private int health;
     private int attack;
@@ -5,10 +9,10 @@ public class FieldCreature {
     private int baseHealth;
     private int baseAttack;
     private int baseTurn;
-    private CardEffect effect;
+    private Effect effect;
     private String name;
 
-    public FieldCreature(int baseHealth, int baseAttack, int baseTurn, CardEffect effect,String name) {
+    public FieldCreature(int baseHealth, int baseAttack, int baseTurn, Effect effect,String name) {
         this.baseHealth = baseHealth;
         this.baseAttack = baseAttack;
         this.baseTurn = baseTurn;

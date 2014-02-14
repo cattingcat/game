@@ -1,3 +1,6 @@
+package model.engine;
+
+import model.cards_templates.Card;
 
 import java.util.ArrayList;
 import java.util.List;

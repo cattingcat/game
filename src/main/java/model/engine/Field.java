@@ -1,3 +1,7 @@
+package model.engine;
+
+import model.cards_creature.FieldCreature;
+
 import java.util.LinkedList;
 import java.util.List;
 

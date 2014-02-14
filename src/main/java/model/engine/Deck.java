@@ -1,3 +1,8 @@
+package model.engine;
+
+import model.SimpleCreature;
+import model.cards_templates.Card;
+
 import java.util.LinkedList;
 
 
@@ -12,6 +17,7 @@ public class Deck {
     public void shuffleDeck(){
 
     }
+
     public Card getTopCard(){
         return cards.peek();
     }

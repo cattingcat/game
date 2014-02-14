@@ -1,6 +1,9 @@
-import sun.print.resources.serviceui_pt_BR;
+package model.engine;
 
-import java.awt.color.ICC_Profile;
+import model.Programm;
+import model.cards_creature.FieldCreature;
+import model.cards_templates.Card;
+import model.cards_templates.Creature;
 
 public class GameField {
     Field field;
@@ -22,7 +25,7 @@ public class GameField {
     }
 
 
-    public void playCreature(CardCreature cc, int row, int column){
+    public void playCreature(Creature cc, int row, int column){
         FieldCreature fc = new FieldCreature(cc.getHealth(),cc.getAttack(),cc.getTurn(),cc.getEffect(),cc.getName());
         if (field.getHex(row,column)==null) {
             field.setHex(fc,row,column);
@@ -33,11 +36,11 @@ public class GameField {
 
     public boolean playCard(int CardNumber){
        Card playCard = hand.getCard(CardNumber);
-        if (playCard instanceof CardCreature) {
+        if (playCard instanceof Creature) {
             Integer row =0 ,column= 0 ;
             int[] coords= new int[2];
             Programm.requestHex(coords);
-            playCreature((CardCreature) playCard,coords[0],coords[1]);
+            playCreature((Creature) playCard,coords[0],coords[1]);
             return true;
         }
         return false;
