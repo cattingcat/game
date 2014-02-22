@@ -1,29 +1,49 @@
 package model.cards_creature;
 
+import model.cards_templates.Creature;
 import model.cards_templates.Effect;
 
 public class FieldCreature {
     private int health;
     private int attack;
     private int turn;
-    private int baseHealth;
-    private int baseAttack;
-    private int baseTurn;
+    private Creature card;
     private Effect effect;
-    private String name;
 
-    public FieldCreature(int baseHealth, int baseAttack, int baseTurn, Effect effect,String name) {
-        this.baseHealth = baseHealth;
-        this.baseAttack = baseAttack;
-        this.baseTurn = baseTurn;
+
+    public FieldCreature(Creature card, Effect effect) {
+        this.card = card;
         this.effect = effect;
-        this.name = name;
-        this.turn = baseTurn;
-        this.health= baseHealth;
-        this.attack = baseAttack;
+        this.turn = card.getBaseTurn();
+        this.health= card.getBaseHealth();
+        this.attack = card.getBaseAttack();
     }
     public FieldCreature() {
-        this(1,1,1,null,"Бесполезный бес");
+        this(new Creature("Useless imp",1,1,1,1),null);
+    }
+
+    public int getTurn() {
+        return turn;
+    }
+
+    public void setTurn(int turn) {
+        this.turn = turn;
+    }
+
+    public Creature getCard() {
+        return card;
+    }
+
+    public void setCard(Creature card) {
+        this.card = card;
+    }
+
+    public Effect getEffect() {
+        return effect;
+    }
+
+    public void setEffect(Effect effect) {
+        this.effect = effect;
     }
 
     public int getHealth() {

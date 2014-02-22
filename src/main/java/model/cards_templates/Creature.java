@@ -8,6 +8,39 @@ import model.engine.GameField;
 import java.util.UUID;
 
 public class Creature extends Card{
+    private int baseHealth;
+    private int baseAttack;
+    private int baseTurn;
+
+    public Creature(String name, int manaCost, int baseHealth, int baseAttack, int baseTurn) {
+        this.baseHealth = baseHealth;
+        this.baseAttack = baseAttack;
+        this.baseTurn = baseTurn;
+    }
+
+    public int getBaseHealth() {
+        return baseHealth;
+    }
+
+    public void setBaseHealth(int baseHealth) {
+        this.baseHealth = baseHealth;
+    }
+
+    public int getBaseAttack() {
+        return baseAttack;
+    }
+
+    public void setBaseAttack(int baseAttack) {
+        this.baseAttack = baseAttack;
+    }
+
+    public int getBaseTurn() {
+        return baseTurn;
+    }
+
+    public void setBaseTurn(int baseTurn) {
+        this.baseTurn = baseTurn;
+    }
 
     @Override
     public void invoke(GameField field, FieldPosition pos) {

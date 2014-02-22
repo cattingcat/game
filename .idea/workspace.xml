@@ -67,10 +67,8 @@
       <file leaf-file-name="Card.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Card.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="25" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="7" column="25" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,7 +76,16 @@
       <file leaf-file-name="Spell.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Spell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+            <state line="11" column="0" selection-start="269" selection-end="269" vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="340">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Deck.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/engine/Deck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="9" selection-start="148" selection-end="148" vertical-scroll-proportion="-6.12" vertical-offset="0" max-vertical-offset="646">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,12 +93,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="FieldPosition.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/engine/FieldPosition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="13" selection-start="36" selection-end="36" vertical-scroll-proportion="-1.36" vertical-offset="0" max-vertical-offset="170">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Field.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/engine/Field.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="584" selection-end="584" vertical-scroll-proportion="-9.48" vertical-offset="86" max-vertical-offset="1479">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Creature.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Creature.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="30" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+            <state line="17" column="24" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#574#575#0" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
+                <element signature="e#656#657#0" expanded="true" />
+                <element signature="e#700#701#0" expanded="true" />
+                <element signature="e#734#735#0" expanded="true" />
+                <element signature="e#767#768#0" expanded="true" />
+                <element signature="e#816#817#0" expanded="true" />
+                <element signature="e#860#861#0" expanded="true" />
+                <element signature="e#892#893#0" expanded="true" />
+                <element signature="e#923#924#0" expanded="true" />
+                <element signature="e#968#969#0" expanded="true" />
+                <element signature="e#1008#1009#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,8 +136,21 @@
       <file leaf-file-name="FieldCreature.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_creature/FieldCreature.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="29" selection-start="542" selection-end="542" vertical-scroll-proportion="0.35620052" vertical-offset="0" max-vertical-offset="758">
-              <folding />
+            <state line="24" column="26" selection-start="627" selection-end="627" vertical-scroll-proportion="0.48726115" vertical-offset="102" max-vertical-offset="1054">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#653#654#0" expanded="true" />
+                <element signature="e#690#691#0" expanded="true" />
+                <element signature="e#722#723#0" expanded="true" />
+                <element signature="e#755#756#0" expanded="true" />
+                <element signature="e#782#783#0" expanded="true" />
+                <element signature="e#824#825#0" expanded="true" />
+                <element signature="e#856#857#0" expanded="true" />
+                <element signature="e#889#890#0" expanded="true" />
+                <element signature="e#918#919#0" expanded="true" />
+                <element signature="e#962#963#0" expanded="true" />
+                <element signature="e#998#999#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,7 +158,7 @@
       <file leaf-file-name="CreaturesFactory.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_creature/CreaturesFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="44" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+            <state line="11" column="44" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -118,11 +167,8 @@
       <file leaf-file-name="Effect.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Effect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-              <folding>
-                <element signature="e#229#230#0" expanded="true" />
-                <element signature="e#260#261#0" expanded="true" />
-              </folding>
+            <state line="3" column="22" selection-start="97" selection-end="97" vertical-scroll-proportion="-2.04" vertical-offset="0" max-vertical-offset="272">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -148,7 +194,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Card.java" />
         <option value="$PROJECT_DIR$/src/main/java/Deck.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/cards/CardEffect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/cards_creature/FieldCreature.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/cards_templates/CardCreature.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/cards_templates/CardSpell.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/engine/FieldPosition.java" />
@@ -157,14 +202,15 @@
         <option value="$PROJECT_DIR$/src/main/java/model/cards_templates/Spell.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/cards_creature/CreaturesFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/cards_templates/Creature.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/cards_creature/FieldCreature.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="-6" />
-    <option name="width" value="1448" />
-    <option name="height" value="883" />
+    <option name="x" value="54" />
+    <option name="y" value="-8" />
+    <option name="width" value="1320" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -210,8 +256,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -348,6 +392,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -650,14 +696,16 @@
       <workItem from="1391363018640" duration="1295000" />
       <workItem from="1391526571381" duration="10348000" />
       <workItem from="1392389568198" duration="5766000" />
+      <workItem from="1393074125077" duration="708000" />
+      <workItem from="1393101976006" duration="2315000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23830000" />
+    <option name="totallyTimeSpent" value="26853000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-6" width="1448" height="883" extended-state="6" />
+    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -678,14 +726,14 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24930556" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2607362" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -721,11 +769,133 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Creature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="30" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="442">
+          <folding>
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_creature/FieldCreature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="29" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="714">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_creature/CreaturesFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="44" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Effect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Spell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Creature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="30" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="442">
+          <folding>
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_creature/FieldCreature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="29" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_creature/CreaturesFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="44" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Effect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/engine/GameField.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="21" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1605">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -747,16 +917,27 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_creature/FieldCreature.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="28" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="690">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Card.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="35" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="480">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -764,7 +945,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="5" selection-start="817" selection-end="817" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="780">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -779,10 +971,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Effect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
-          <folding>
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -806,7 +995,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="13" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="646">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -821,16 +1010,27 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_creature/FieldCreature.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Card.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="33" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="408">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -852,7 +1052,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="13" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="646">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -867,16 +1067,27 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_creature/FieldCreature.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Card.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="5" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="408">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -898,7 +1109,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="20" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="646">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -913,16 +1124,27 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_creature/FieldCreature.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Card.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="5" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="408">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -965,48 +1187,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="19" selection-start="210" selection-end="210" vertical-scroll-proportion="0.17810026" vertical-offset="0" max-vertical-offset="1455">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/engine/FieldPosition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/engine/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="584" selection-end="584" vertical-scroll-proportion="0.37598944" vertical-offset="0" max-vertical-offset="1305">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/engine/Deck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="124" selection-end="124" vertical-scroll-proportion="0.15831135" vertical-offset="0" max-vertical-offset="758">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Effect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <folding>
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/java/jdk1.7.0_51/src.zip!/java/util/UUID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="42" selection-start="3495" selection-end="3495" vertical-scroll-proportion="0.43139842" vertical-offset="1158" max-vertical-offset="6330">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,37 +1199,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Card.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Effect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="25" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="3" column="22" selection-start="97" selection-end="97" vertical-scroll-proportion="-2.04" vertical-offset="0" max-vertical-offset="272">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Spell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+        <state line="11" column="0" selection-start="269" selection-end="269" vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/engine/FieldPosition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="36" selection-end="36" vertical-scroll-proportion="-1.36" vertical-offset="0" max-vertical-offset="170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/engine/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="584" selection-end="584" vertical-scroll-proportion="-9.48" vertical-offset="86" max-vertical-offset="1479">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/engine/Deck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="9" selection-start="148" selection-end="148" vertical-scroll-proportion="-6.12" vertical-offset="0" max-vertical-offset="646">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Creature.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="30" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+        <state line="17" column="24" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_creature/FieldCreature.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="29" selection-start="542" selection-end="542" vertical-scroll-proportion="0.35620052" vertical-offset="0" max-vertical-offset="758">
-          <folding />
+        <state line="24" column="26" selection-start="627" selection-end="627" vertical-scroll-proportion="0.48726115" vertical-offset="102" max-vertical-offset="1054">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
