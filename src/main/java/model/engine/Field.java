@@ -1,6 +1,8 @@
 package model.engine;
 
 import model.cards_creature.FieldCreature;
+import model.engine.events.CardPlayedEvent;
+import model.engine.events.Event;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -8,6 +10,11 @@ import java.util.List;
 public class Field {
     FieldCreature[][] battleField;
     int rowNum, columnNum;
+    CardPlayedEvent cpe;
+
+    {
+        cpe = new CardPlayedEvent(this);
+    }
 
     public Field(int rowNum,int columnNum){
         battleField = createBF(rowNum,columnNum);

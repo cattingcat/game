@@ -26,7 +26,7 @@ public class GameField {
 
 
     public void playCreature(Creature cc, int row, int column){
-        FieldCreature fc = new FieldCreature(cc.getHealth(),cc.getAttack(),cc.getTurn(),cc.getEffect(),cc.getName());
+        FieldCreature fc = new FieldCreature(cc,null);
         if (field.getHex(row,column)==null) {
             field.setHex(fc,row,column);
         }
