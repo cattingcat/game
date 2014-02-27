@@ -13,7 +13,11 @@ public class Programm {
         br = new BufferedReader(new InputStreamReader(System.in));
 
         GameField gf = new GameField();
+        gf.beginTurn();
         gf.endTurn();
+        gf.beginTurn();
+        gf.endTurn();
+
         int action = 0;
         do{
             System.out.println("Введи номер разыгрваемой карты ");

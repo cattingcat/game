@@ -1,7 +1,7 @@
 package model.engine.events;
 
 import model.cards_templates.Card;
-import model.engine.Field;
+import model.engine.player.Field;
 
 /**
  * Created by Константин on 23.02.14.

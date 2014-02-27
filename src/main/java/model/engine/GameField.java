@@ -4,37 +4,21 @@ import model.Programm;
 import model.cards_creature.FieldCreature;
 import model.cards_templates.Card;
 import model.cards_templates.Creature;
+import model.engine.player.*;
 
 public class GameField {
     private int turn = 0;
-    Field[] fieldSides;
-    Hand[] hands;
-    int[][]idols;
-    Deck[] decks;
+    Player players[];
     static final int playersCount = 2;
 
     static final int rowNum = 5;
     static final int columnNum = 3;
     private static final int idolBaseHealth = 10;
     {
-        hands = new Hand[playersCount];
-        hands[0] = new Hand();
-        hands[1] = new Hand();
-
-        decks= new Deck[playersCount];
-        decks[0] = new Deck();
-        decks[1] = new Deck();
-        //TODO make normal deck, this is test.
-        decks[0] = Deck.getTestDeck();
-        //~~~~
-        fieldSides = new Field[playersCount];
-        fieldSides[0] = new Field(rowNum,columnNum);
-        fieldSides[1] = new Field(rowNum,columnNum);
-        idols = new int[playersCount][];
-        for(int i = 0 ;i<playersCount;i++){
-            idols[i] = initializeIdols();
+        players = new Player[playersCount];
+        for(int i = 0 ;i<playersCount ;i++){
+            players[i] = new Player(Deck.getTestDeck(),new Hand(),initializeIdols(),new Field(rowNum,columnNum));
         }
-
     }
 
     public void playCreature(Creature cc, int row, int column){
@@ -68,11 +52,11 @@ public class GameField {
     }
 
     private Hand getMyHand(){
-        return hands[turn];
+        return players[turn].getHand();
     }
 
     private Field getMyField(){
-        return fieldSides[turn];
+        return players[turn].getFieldSide();
     }
 
     @Override
@@ -82,18 +66,26 @@ public class GameField {
             for(int i=0;i<rowNum;i++){
                 sb.append("[ ");
                 for(int j=0;j<columnNum;j++) {
-                    if (fieldSides[j].getHex(i,j) != null) {
-                        sb.append(fieldSides[k].getHex(i,j).getAttack()+ "/" +fieldSides[k].getHex(i,j).getHealth()+" ," );
+                    if (players[k].getFieldSide().getHex(i, j) != null) {
+                        sb.append(players[k].getFieldSide().getHex(i,j).getAttack()+ "/" +players[k].getFieldSide().getHex(i,j).getHealth()+" ," );
                     } else {
                         sb.append(" X ,");
                     }
                 }
-                sb.append(" ]");
-                sb.append("\n");
+            sb.append(" ]");
+            sb.append("\n");
             }
-        }
+            sb.append("\n");
+            sb.append("Поле второго игрока");
+            sb.append("\n");
+        } 
         return sb.toString();
     }
+
+    public void beginTurn(){
+        players[turn].takeTopCard();
+    }
+
 
     public void endTurn(){
         turn = (turn==0)? 1 :0;
