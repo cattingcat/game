@@ -13,6 +13,7 @@ public class Creature extends Card{
     private int baseTurn;
 
     public Creature(String name, int manaCost, int baseHealth, int baseAttack, int baseTurn) {
+        super(name,manaCost);
         this.baseHealth = baseHealth;
         this.baseAttack = baseAttack;
         this.baseTurn = baseTurn;
@@ -49,5 +50,14 @@ public class Creature extends Card{
         FieldCreature fc = factory.getFieldCreature(UUID.randomUUID());
         // TODO add method ...
         //field.addFieldCreature(fc, pos);
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder result = new StringBuilder();
+        result.append(""+ getName());
+        result.append(" Стоимость: "+super.getManaCost());
+        result.append(" Атака: "+this.getBaseAttack()+"\n");
+        return result.toString();
     }
 }

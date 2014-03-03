@@ -1,6 +1,7 @@
 package model;
 
 import model.engine.GameField;
+import model.engine.player.Field;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -20,6 +21,7 @@ public class Programm {
 
         int action = 0;
         do{
+            System.out.println(gf.getStatus());
             System.out.println("Введи номер разыгрваемой карты ");
             int cardNum = Integer.valueOf(br.readLine());
             gf.playCard(cardNum);
