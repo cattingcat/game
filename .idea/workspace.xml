@@ -65,10 +65,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Player.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/engine/player/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="39" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.56743" vertical-offset="491" max-vertical-offset="884">
+            <state line="56" column="0" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0" vertical-offset="491" max-vertical-offset="884">
               <folding />
             </state>
           </provider>
@@ -83,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hand.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/engine/player/Hand.java">
+      <file leaf-file-name="Creature.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Creature.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="28" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0" vertical-offset="355" max-vertical-offset="799">
+            <state line="57" column="23" selection-start="1502" selection-end="1502" vertical-scroll-proportion="0.648855" vertical-offset="425" max-vertical-offset="884">
               <folding />
             </state>
           </provider>
@@ -707,12 +707,12 @@
       <workItem from="1393498124701" duration="155000" />
       <workItem from="1393515634587" duration="3384000" />
       <workItem from="1393847667959" duration="862000" />
-      <workItem from="1393862107557" duration="4682000" />
+      <workItem from="1393862107557" duration="5917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46486000" />
+    <option name="totallyTimeSpent" value="47721000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -736,7 +736,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -759,7 +759,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26941362" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32515338" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32515338" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1108,6 +1108,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/engine/player/Hand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="28" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0" vertical-offset="355" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/engine/player/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0" vertical-offset="491" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Spell.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="60" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
@@ -1118,20 +1132,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/model/cards_templates/Creature.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="23" selection-start="1502" selection-end="1502" vertical-scroll-proportion="0.648855" vertical-offset="425" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/engine/player/Hand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="28" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0" vertical-offset="355" max-vertical-offset="799">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/engine/player/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="39" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.56743" vertical-offset="491" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
