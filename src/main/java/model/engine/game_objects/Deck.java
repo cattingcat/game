@@ -1,4 +1,4 @@
-package model.engine.player;
+package model.engine.game_objects;
 
 import model.SimpleCreature;
 import model.cards_templates.Card;

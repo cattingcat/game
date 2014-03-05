@@ -4,11 +4,12 @@ import model.Programm;
 import model.cards_creature.FieldCreature;
 import model.cards_templates.Card;
 import model.cards_templates.Creature;
-import model.engine.player.*;
+import model.engine.game_objects.*;
 
 public class GameField {
-    private int turn = 0;
-    Player players[];
+    private boolean myTurn = false;
+    Field self;
+    Field opponent;
     static final int playersCount = 2;
 
     static final int rowNum = 5;
@@ -16,18 +17,17 @@ public class GameField {
     private static final int idolBaseHealth = 10;
 
     {
-        players = new Player[playersCount];
-        for (int i = 0; i < playersCount; i++) {
-            players[i] = new Player(Deck.getTestDeck(), new Hand(), initializeIdols(), new Field(rowNum, columnNum));
-        }
+        //TODO delete Test initializations
+            self = new Field(Deck.getTestDeck(), new Hand(), initializeIdols(), new Grid(rowNum, columnNum,this));
+            opponent = new Field(Deck.getTestDeck(), new Hand(), initializeIdols(), new Grid(rowNum, columnNum,this));
+        //~TODO
     }
 
     public String getStatus() {
         StringBuilder result = new StringBuilder();
-        Player currentPlayer = players[turn];
         result.append("Status:\n");
-        result.append("Now Player's "+ (turn+1) +" turn \n");
-        result.append(currentPlayer);
+        result.append("Now Field's "+ 1 +" turn \n");
+        result.append(currentPlayer());
         return result.toString();
     }
 
@@ -65,42 +65,43 @@ public class GameField {
     }
 
     private Hand getMyHand() {
-        return players[turn].getHand();
+        return currentPlayer().getHand();
     }
 
-    private Field getMyField() {
-        return players[turn].getFieldSide();
+    private Grid getMyField() {
+        return currentPlayer().getGridSide();
+    }
+
+    public Field currentPlayer(){
+        return (myTurn)?self:opponent;
     }
 
     @Override
     public String toString() {
         StringBuffer sb = new StringBuffer();
-        for (int k = 0; k < playersCount; k++) {
-            for (int i = 0; i < rowNum; i++) {
-                sb.append("[ ");
-                for (int j = 0; j < columnNum; j++) {
-                    if (players[k].getFieldSide().getHex(i, j) != null) {
-                        sb.append(players[k].getFieldSide().getHex(i, j).getAttack() + "/" + players[k].getFieldSide().getHex(i, j).getHealth() + " ,");
-                    } else {
-                        sb.append(" X ,");
-                    }
-                }
-                sb.append(" ]");
-                sb.append("\n");
-            }
-            sb.append("\n");
-            sb.append("Поле второго игрока");
-            sb.append("\n");
-        }
+
+        sb.append(self.getGridSide());
+
+
+        sb.append("\n");
+        sb.append("\n");
+        sb.append("Поле второго игрока");
+        sb.append("\n");
+
+        sb.append(opponent.getGridSide());
+
+
         return sb.toString();
     }
 
     public void beginTurn() {
-        players[turn].takeTopCard();
+        currentPlayer().takeTopCard();
     }
 
 
+
+
     public void endTurn() {
-        turn = (turn == 0) ? 1 : 0;
+        myTurn = !myTurn;
     }
 }

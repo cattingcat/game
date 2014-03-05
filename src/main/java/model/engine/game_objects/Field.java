@@ -1,19 +1,19 @@
-package model.engine.player;
+package model.engine.game_objects;
 
 /**
  * Created by Константин on 27.02.14.
  */
-public class Player {
+public class Field {
     Deck deck;
     Hand hand;
     int[] idols;
-    Field fieldSide;
+    Grid gridSide;
 
-    public Player(Deck deck, Hand hand, int[] idols, Field fieldSide) {
+    public Field(Deck deck, Hand hand, int[] idols, Grid gridSide) {
         this.deck = deck;
         this.hand = hand;
         this.idols = idols;
-        this.fieldSide = fieldSide;
+        this.gridSide = gridSide;
     }
 
     public void takeTopCard(){
@@ -44,12 +44,12 @@ public class Player {
         this.idols = idols;
     }
 
-    public Field getFieldSide() {
-        return fieldSide;
+    public Grid getGridSide() {
+        return gridSide;
     }
 
-    public void setFieldSide(Field fieldSide) {
-        this.fieldSide = fieldSide;
+    public void setGridSide(Grid gridSide) {
+        this.gridSide = gridSide;
     }
 
     @Override

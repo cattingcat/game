@@ -57,7 +57,8 @@ public class Creature extends Card{
         StringBuilder result = new StringBuilder();
         result.append(""+ getName());
         result.append(" Стоимость: "+super.getManaCost());
-        result.append(" Атака: "+this.getBaseAttack()+"\n");
+        result.append(" Атака: "+this.getBaseAttack());
+        result.append(" Жизни: "+this.getBaseHealth()+"\n");
         return result.toString();
     }
 }

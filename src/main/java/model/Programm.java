@@ -1,7 +1,6 @@
 package model;
 
 import model.engine.GameField;
-import model.engine.player.Field;
 
 import java.io.BufferedReader;
 import java.io.IOException;

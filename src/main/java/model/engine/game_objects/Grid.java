@@ -1,26 +1,27 @@
-package model.engine.player;
+package model.engine.game_objects;
 
 import model.cards_creature.FieldCreature;
+import model.engine.GameField;
 import model.engine.events.CardPlayedEvent;
-import model.engine.events.Event;
 
 import java.util.LinkedList;
 import java.util.List;
 
-public class Field {
+public class Grid {
     FieldCreature[][] battleField;
     int rowNum, columnNum;
     CardPlayedEvent cpe;
+    private static final int hexLenght = 5;
 
-    {
-        cpe = new CardPlayedEvent(this);
-    }
 
-    public Field(int rowNum,int columnNum){
+    public Grid(int rowNum, int columnNum, GameField gf){
         battleField = createBF(rowNum,columnNum);
         this.rowNum = rowNum;
         this.columnNum = columnNum;
+        cpe = new CardPlayedEvent(gf);
     }
+
+
 
     public FieldCreature getHex(int rowNum,int columnNum) {
         return battleField[rowNum][columnNum];
@@ -86,6 +87,45 @@ public class Field {
         }
     }
 
+    @Override
+    public String toString(){
+        StringBuffer result = new StringBuffer();
+        for (int i = 0; i < rowNum; i++) {
+            result.append("[ ");
+            for (int j = 0; j < columnNum; j++) {
+                hexString(result,i,j);
+            }
+            result.append(" ]");
+            result.append("\n");
 
+
+        }
+        return result.toString();
+    }
+
+    private void hexString(StringBuffer sb ,int i, int j){
+        FieldCreature cr = getHex(i, j);
+        if (cr  != null) {
+            String s = cr.getAttack() + "/" + cr.getHealth();
+            addStringHex(sb, s);
+
+        } else {
+            addStringHex(sb, "X");
+        }
+        sb.append(",");
+    }
+    public void addStringHex(StringBuffer sb,String s){
+        int len = hexLenght - s.length(); 
+        sb.append(probels(len/2));
+        sb.append(s);
+        sb.append(probels(len - len/2 - 1));
+    }
+    private String probels(int length){
+        char[] ch = new char[length];
+        for(int i = 0;i<length;i++){
+            ch[i]= ' ';
+        }
+        return new String(ch);
+    }
 
 }
