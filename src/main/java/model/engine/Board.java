@@ -1,16 +1,22 @@
 package model.engine;
 
 import model.Programm;
+import model.Test;
 import model.cards_creature.FieldCreature;
 import model.cards_templates.Card;
 import model.cards_templates.Creature;
+import model.engine.events.CardPlayedEvent;
 import model.engine.game_objects.*;
 
-public class GameField {
+public class Board {
     private boolean myTurn = false;
     Field self;
     Field opponent;
     static final int playersCount = 2;
+
+    private CardPlayedEvent cardPlayed = new CardPlayedEvent(this);
+
+
 
     static final int rowNum = 5;
     static final int columnNum = 3;
@@ -18,8 +24,8 @@ public class GameField {
 
     {
         //TODO delete Test initializations
-            self = new Field(Deck.getTestDeck(), new Hand(), initializeIdols(), new Grid(rowNum, columnNum,this));
-            opponent = new Field(Deck.getTestDeck(), new Hand(), initializeIdols(), new Grid(rowNum, columnNum,this));
+            self = new Field(Test.getTestDeck(), new Hand(), initializeIdols(), new Grid(rowNum, columnNum,this));
+            opponent = new Field(Test.getTestDeck(), new Hand(), initializeIdols(), new Grid(rowNum, columnNum,this));
         //~TODO
     }
 
@@ -39,7 +45,6 @@ public class GameField {
         if (getMyField().getHex(row, column) == null) {
             getMyField().setHex(fc, row, column);
         }
-
     }
 
 
@@ -49,8 +54,11 @@ public class GameField {
             int[] coords = new int[2];
             Programm.requestHex(coords);
             playCreature((Creature) playCard, coords[0], coords[1]);
+            playCard.getEffect().playEffect(this,null);
+            cardPlayed.notifyAll(playCard,coords[0], coords[1]);
             return true;
         }
+
         return false;
     }
 
@@ -103,5 +111,9 @@ public class GameField {
 
     public void endTurn() {
         myTurn = !myTurn;
+    }
+
+    public CardPlayedEvent getCardPlayed() {
+        return cardPlayed;
     }
 }

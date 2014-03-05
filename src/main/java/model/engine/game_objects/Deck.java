@@ -1,7 +1,9 @@
 package model.engine.game_objects;
 
-import model.SimpleCreature;
+import model.cards_creature.FieldCreature;
 import model.cards_templates.Card;
+import model.cards_templates.Creature;
+import model.cards_templates.Effect;
 
 import java.util.LinkedList;
 
@@ -22,12 +24,10 @@ public class Deck {
         return cards.peek();
     }
 
-    public static Deck getTestDeck(){
-        Deck result = new Deck();
-
-        for(int i = 0;i<30;i++){
-            result.cards.add(new SimpleCreature());
-        }
-        return result;
+    public void addTopCard(Card c){
+        cards.add(c);
     }
+
+
+
 }

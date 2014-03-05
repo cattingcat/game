@@ -1,7 +1,7 @@
 package model.engine.game_objects;
 
 import model.cards_creature.FieldCreature;
-import model.engine.GameField;
+import model.engine.Board;
 import model.engine.events.CardPlayedEvent;
 
 import java.util.LinkedList;
@@ -14,7 +14,7 @@ public class Grid {
     private static final int hexLenght = 5;
 
 
-    public Grid(int rowNum, int columnNum, GameField gf){
+    public Grid(int rowNum, int columnNum, Board gf){
         battleField = createBF(rowNum,columnNum);
         this.rowNum = rowNum;
         this.columnNum = columnNum;

@@ -1,6 +1,6 @@
 package model;
 
-import model.engine.GameField;
+import model.engine.Board;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,7 +12,7 @@ public class Programm {
 
         br = new BufferedReader(new InputStreamReader(System.in));
 
-        GameField gf = new GameField();
+        Board gf = new Board();
         gf.beginTurn();
         gf.endTurn();
         gf.beginTurn();

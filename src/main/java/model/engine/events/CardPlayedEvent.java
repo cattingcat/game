@@ -1,21 +1,22 @@
 package model.engine.events;
 
 import model.cards_templates.Card;
-import model.engine.GameField;
+import model.engine.Board;
+import model.engine.game_objects.Field;
 
 /**
  * Created by Константин on 23.02.14.
  */
 public class CardPlayedEvent extends Event<CardPlayedListener>{
-    GameField field;
+    Board field;
 
-    public CardPlayedEvent(GameField field) {
+    public CardPlayedEvent(Board field) {
         this.field = field;
     }
 
-    public void notifyAll(Card c){
+    public void notifyAll(Card c,int row, int column){
         for(CardPlayedListener l : listeners){
-            l.playCard(c,field);
+            l.playCard(c,field,row, column);
         }
 
     }
