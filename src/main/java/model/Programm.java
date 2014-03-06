@@ -25,6 +25,12 @@ public class Programm {
             int cardNum = Integer.valueOf(br.readLine());
             gf.playCard(cardNum);
             System.out.println(gf.toString());
+            System.out.println("Введи 0 для прекращения проги");
+            gf.beginTurn();
+            gf.endTurn();
+            gf.beginTurn();
+            gf.endTurn();
+            action = Integer.valueOf(br.readLine());
         }while(action!=0);
     }
 

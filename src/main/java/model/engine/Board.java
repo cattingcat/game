@@ -5,14 +5,19 @@ import model.Test;
 import model.cards_creature.FieldCreature;
 import model.cards_templates.Card;
 import model.cards_templates.Creature;
+import model.cards_templates.Effect;
 import model.engine.events.CardPlayedEvent;
 import model.engine.game_objects.*;
+
+import java.util.Map;
 
 public class Board {
     private boolean myTurn = false;
     Field self;
     Field opponent;
     static final int playersCount = 2;
+
+    EffectsFactory effectsFactory;
 
     private CardPlayedEvent cardPlayed = new CardPlayedEvent(this);
 
@@ -27,6 +32,7 @@ public class Board {
             self = new Field(Test.getTestDeck(), new Hand(), initializeIdols(), new Grid(rowNum, columnNum,this));
             opponent = new Field(Test.getTestDeck(), new Hand(), initializeIdols(), new Grid(rowNum, columnNum,this));
         //~TODO
+        effectsFactory = new EffectsFactory();
     }
 
     public String getStatus() {
@@ -116,4 +122,5 @@ public class Board {
     public CardPlayedEvent getCardPlayed() {
         return cardPlayed;
     }
+
 }
